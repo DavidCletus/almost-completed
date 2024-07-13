@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration:none;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    height: 900px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+i{
+    visibility: hidden;
+}
+nav button{
+    width: 120px;
+    height: 35px;
+    background-color:#DDD9CE ;
+    border-radius: 6px;
+    border: none;
+    margin-top: 50px;
+}
+nav{
+    width: 24%;
+    height: 100vh;
+    background-color: #AC9CBD;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    
+}
+nav p{
+    font-size: 30px;
+    text-align: center;
+}
+.logo{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.links{
+    width: 60%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+a{
+    color: white;
+}
+hr{
+    width: 60%;
+}
+section{
+    width: 75%;
+    background-color: #E3C1B4;
+    text-align: center;
+    padding: 6px;
+    position: relative;
+    right: 0%;
+    left: 24%;
+}
+section h3,h1{
+    margin-top: 15px;
+}
+section p{
+    margin-top: 10px;
+}
+.image--pack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    margin: 1% 0%;
+    border-radius: 20px;
+}
+.image1{
+    width: 30%;
+    border-radius: 10px;
+
+}
+.image2{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 30%;
+}
+
+@media only screen and ( width < 700px){
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration:none;
+        list-style: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+        /* height: 900px; */
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+    }
+    
+    nav button{
+        width: 120px;
+        height: 35px;
+        background-color:#DDD9CE ;
+        border-radius: 6px;
+        border: none;
+        margin-top: 50px;
+    }
+    nav{
+        background-color: #AC9CBD;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+    }
+    nav i{
+        visibility: visible;
+        font-size: 30px;
+        position: absolute;
+        right: 2%;
+        bottom: 92%;
+        cursor: pointer;
+        position: fixed;
+    }
+    section i{
+        visibility: visible;
+        font-size: 30px;
+        margin-right: 95%;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    nav p{
+        font-size: 30px;
+        text-align: center;
+    }
+    .logo{
+        width: 80%;
+        height: 50px;
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .links{
+        width: 60%;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    a{
+        color: white;
+    }
+    hr{
+        width: 60%;
+    }
+    section{
+        width: 100%;
+        background-color: #E3C1B4;
+        height: 900px;
+        text-align: center;
+        padding: 5px;
+        position: relative;
+        right: 0%;
+        left: 0%;
+    
+    }
+    section h3,h1{
+        margin-top: 15px;
+    }
+    section p{
+        margin-top: 10px;
+    }
+    .image--pack{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10%;
+        width: 100%;
+        margin: 1% 0%;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .image1{
+        width: 100%;
+        border-radius: 10px;
+    
+    }
+    .image2{
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 90%;
+    }
+    
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="card">
+        <h1>LOGIN HERE</h1>
+<h3>to login fill in the following details</h3>
+        <input type="text" placeholder="NAME">
+        <input type="text" placeholder="SURNAME">
+        <input type="text" placeholder="OTHER NAMES">
+        <input type="email" placeholder="EMAIL">
+        <input type="number" placeholder="PHONE NO">
+        <div class="input-box">
+            <input type="password" placeholder="PASSWORD" id="password">
+            <img src="eye-slash.svg" id="eyeicon">
+        </div>
+        <a href=""><button>LOGIN</button></a>
+    </div>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration:none;
+            list-style: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #AC9CBD;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .card{
+            width: 80%;
+            height: 80%;
+            background-color: #AC9CBD;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 300px;
+            height: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+         button{
+            width: 120px;
+            height: 35px;
+            background-color:#DDD9CE ;
+            border-radius: 6px;
+            border: none;
+        }
+        .input-box{
+            width: 320px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            background-color: #fff;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            outline: none;
+        }
+        .input-box img{
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .input-box input{
+            outline: none;
+            border: none;
+        }
+
+        @media only screen and (width < 700px){
+            *{
+            padding: 0;
+            margin: 0;
+            text-decoration:none;
+            list-style: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .card{
+            width: 100%;
+            background-color: #AC9CBD;
+            border-radius: 20px;
+            align-items: center;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        input{
+            width: 250px;
+            height: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+         button{
+            width: 120px;
+            height: 35px;
+            background-color:#DDD9CE ;
+            border-radius: 6px;
+            border: none;
+        }
+        }
+
+    </style>
+    <script>
+        let password =document.getElementById("password");
+        let eyeicon =document.getElementById("eyeicon");
+
+        eyeicon.onclick= function(){
+            if(password.type=="password"){
+                password.type = "text";
+                eyeicon.src="eye.svg";
+            }
+            else{
+                password.type ="password";
+                eyeicon.src="eye-slash.svg"
+            }
+        }
+    </script>
+</body>
+</html>
